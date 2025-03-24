@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Starting Build...'
-                sh 'g++ -o PES1UG22CS463 PES1UG22CS463-1.cpp'
+                sh 'g++ -o PES1UG22CS475 PES1UG22CS475-1.cpp'
                 echo 'Build Completed Successfully'
             }
         }
@@ -13,7 +13,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Running Tests...'
-                sh './PES1UG22CS463'
+                sh './PES1UG22CS475'
                 echo 'Tests Completed Successfully'
             }
         }
